@@ -1,2 +1,2 @@
 # Mobile
-Programação mobile com js
+Programação Mobile com JS

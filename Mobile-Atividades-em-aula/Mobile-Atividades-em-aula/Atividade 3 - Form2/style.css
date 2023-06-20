@@ -1,0 +1,93 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ADD8E6;
+}
+
+form{
+    background-color: white;
+    max-width: 600px;
+    width: 70%;
+    padding: 50px;
+    padding-top: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+}
+
+form h2{
+    color: #BBD5EA;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 0px 5px 5px 5px;
+    margin: 0;
+}
+
+form h3{
+    font-size: 20px;
+
+}
+
+form input[type=text], form input[type=password]{
+  width: 100%;
+  height: 35px;
+  border: 1px solid#ccc;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+
+form input[type=radio], form input[type=checkbox]{
+    width: 50px;
+    height: auto;
+    border: 1px solid#ccc;
+    margin: 5px 0;
+}
+
+form input[type=submit]{
+    width: 20%;
+    height: 35px;
+    cursor: pointer;
+    background: #5F7C8A;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+form input[type=reset]{
+    width: 20%;
+    height: 35px;
+    cursor: pointer;
+    background: #5F7C8A;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+form input[type=submit]:hover{
+    background-color: #4A5F6A;
+}
+
+form input[type=reset]:hover{
+    background-color: #4A5F6A;
+}
+
+form input[type=text]:focus{
+    outline: 0;
+}
+
+form input[type=password]:focus{
+    outline: 0;
+}
+
+form textarea{
+    width: 100%;
+}
