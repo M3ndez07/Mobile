@@ -1,0 +1,82 @@
+body {
+    background: rgb(36, 35, 35);
+    margin: 0px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.37);
+}
+
+#resultado {
+    color: white;
+}
+
+#resultado  h1 {
+    font-size: 33px;
+
+}
+
+#resultado p {
+    font-size: 40px;
+
+}
+
+#caixa {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#caixa-centro {
+    border-radius:4px ;
+    height: 600px;
+    width: 350px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(20, 20, 20, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.856);
+    -webkit-box-shadow: 0px 0px 8px 2px #000000;
+    -moz-box-shadow: 0px 0px 8px 2px #000000;
+    box-shadow: 0px 0px 8px 2px #000000;
+}
+
+input {
+    text-align: center;
+    width: 175px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 4px;
+}
+
+#barras input:hover {
+    border-color: #3a1ccf;
+    padding: 17px;
+
+}
+
+#botao {
+    background-color: #3a1ccf;
+    border-radius: 4px;
+    border-color: #b03df200;
+    color: white;
+    margin-top: 40px;
+   
+}
+
+#botao:hover {
+    background-color: #3a1ccf;
+   
+    transition: 150ms;
+}
+   
+em {
+    color: #3a1ccf;
+    font-size: 21px;
+}
+
+#barra1 {
+    margin-top: 25px;
+}
