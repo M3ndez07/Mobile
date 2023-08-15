@@ -1,0 +1,55 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para o formulário */
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilos para parágrafos */
+  p {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Estilos para seleção de turno */
+  select[name="turno"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para seleção de horários */
+  select[name="horario"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 120px; /* Ajuste a altura conforme necessário */
+  }
+  
+  /* Estilos para opções de seleção */
+  select[name="horario"] option {
+    padding: 5px;
+  }
+  
+  /* Estilos para botões de adicionar/remover */
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }  

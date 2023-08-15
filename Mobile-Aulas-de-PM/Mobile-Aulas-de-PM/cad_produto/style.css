@@ -1,0 +1,107 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(226, 214, 43);
+  }
+  
+  button {
+    background-color: rgb(61, 43, 226);
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+    width: 15%;
+    margin: 10px;
+  }
+  
+  button:hover {
+    background-color: rgb(37, 33, 100);
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: rgb(83, 43, 226);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    font-size: 30px;
+  }
+  
+  h5 {
+    margin-top: 5px;
+  }
+  
+  .navbar {
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Form Styles */
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 1em;
+    border: 1px solid gray;  
+    width: 50%;
+    align-self: center;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    border: 1px solid gray; 
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  /* Table Styles */
+  
+  table {
+    border-collapse: collapse;
+    border: 1px solid grey;
+    width: 100%;
+  }
+  
+  .table-header {
+    background-color: rgb(204, 204, 204);
+  }
+  
+  .table-header th, .table-data td {
+    text-align: left;
+    padding: 10px 5px;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  

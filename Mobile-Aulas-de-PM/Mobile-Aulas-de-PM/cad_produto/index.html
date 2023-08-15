@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos - Fixando POO no JavaScript</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        Cadastro de Produtos InfoTech
+    </header>
+
+    <div class="formulario">
+        <h1>Produtos</h1>
+        <h3>Lista de produtos cadastrados na loja</h3>
+        <h5>Produto</h5>
+        <input type="text" id="nomeproduto" placeholder="nome do produto">
+        <h5>Valor</h5>
+        <input type="text" id="precoproduto" placeholder="valor do produto">
+        <div class="buttons">
+            <button onclick="produto.adicionar()">Adicionar</button>
+
+            <!--  <button onclick="produto.excluir()">Excluir</button>  -->
+        </div>
+    </div>
+
+    <div class="content">
+        <table border="1">
+            <thead>
+                <th class="center">ID</th>
+                <th>Produto</th>
+                <th>Valor</th>
+            </thead>
+            <tbody id="tbody">
+               
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste 2</title>
+    <script>
+        intervalos = new Array(3); // vetor 2D c/ intervalos/turno
+        intervalos[0] = new Array("07:20 às 08:10", "08:10 às 09:00", "09:00 às 09:50", "10:05 às 10:55","10:55 às 11:45", "11:45 às 12:35");
+        intervalos[1] = new Array("13 às 13:50", "13:50 às 14:40", "14:40 às 15:30", "15:45 às 16:35", "16:35 às 17:25", "17:25 às 18:15");
+        intervalos[2] = new Array("18:30 às 19:20", "19:20 às 20:10", "20:10 às 21:00", "21:15 às 22:05","22:05 às 22:55","22:55 às 23:45");
+        function setIntervalos(f) {
+         idx = f.turno.options.selectedIndex;
+         for (i = 0; i < f.horario.length; i++) {
+         f.horario.options[i].text = intervalos[idx][i];
+         }
+        }
+   
+        function mais(f) { // f é o formulário onde o Select está contido
+        selObj = f.horario;
+        novaOp = new Option(); // (1)
+        novaOp.text = "Intervalo 0" + (selObj.length + 1); // (2)
+        selObj.options[selObj.length] = novaOp; // (3)
+        }
+        function menos(f) {
+        selObj = f.horario;
+        if (selObj.length > 0) {
+        len = selObj.length - 1;
+        selObj.length = len; // length = length - 1
+            }
+        }
+   
+        </script>
+</head>
+<body>
+
+    <form>
+        <p>Escolha um turno:</p>
+        <select name=turno onchange="setIntervalos(this.form)">
+         <option>Manhã</option>
+         <option>Tarde</option>
+         <option>Noite</option>
+        </select>
+        <p>Escolha um ou mais intervalos:</p>
+        <select name=horario size=6 multiple>
+         <option> Intervalo 01 </option> <!-- Estes valores irão mudar -->
+         <option> Intervalo 02 </option>
+         <option> Intervalo 03 </option>
+         <option> Intervalo 04 </option>
+         <option> Intervalo 05 </option>
+         <option> Intervalo 06 </option>
+        </select>
+    </form>
+   
+</body>
+</html>
