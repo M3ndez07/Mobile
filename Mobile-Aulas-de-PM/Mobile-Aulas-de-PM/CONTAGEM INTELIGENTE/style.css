@@ -1,0 +1,39 @@
+/* Estilo para o cabeçalho h1 */
+h1 {
+    color: blue;
+  }
+  
+  /* Estilo para o parágrafo p */
+  p {
+    font-size: 16px;
+    color: gray;
+  }
+  
+  /* Estilo para o formulário de entrada */
+  #entrada {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para as caixas de entrada de número */
+  input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  /* Estilo para o botão de submit */
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Estilo para a seção de saída */
+  #saida {
+    background-color: lightgray;
+    padding: 10px;
+    border: 1px solid gray;
+  }
+  
