@@ -1,0 +1,10 @@
+
+body { font: 12pt Arial; } 
+h1, h2, h3 { font-family: 'Pacifico', cursive; font-weight: normal;}
+input[type=number] { font-size: 12pt; } 
+input[type=submit] {
+background-color: rgb(52, 58, 233);
+color: white;
+font-size: 12pt;
+padding: 5px;
+}
