@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Calculadora de Combustível</h1>
+
+<script>
+
+    function mostra (frase){
+
+        document.write (frase);
+    }
+
+    function CalculaKM (litros, mediaPorLitro, kmAtual){
+
+        return litros*mediaPorLitro + kmAtual;
+
+    }
+
+    var litrosInformado = parseFloat (prompt ("Abastecimento de quantos LITROS?"));
+
+        while (isNaN(litrosInformado)){
+
+            alert ("Você precisa informar corretamente a quantidade de LITROS abastecida");    
+
+            litrosInformado = parseFloat (prompt ("Abastecimento de quantos LITROS?"));
+        }
+
+    var mediaPorLitroInformada = parseFloat(prompt ("Em média, quantos Km o veículo roda com UM litro de combusível?"))
+
+        while (isNaN(mediaPorLitroInformada)){
+
+            alert ("Você precisa informar corretamente quantos Km o veículo roda com UM litro de combusível");
+
+            mediaPorLitroInformada = parseFloat(prompt ("Em média, quantos Km o veículo roda com UM litro de combusível?"));    
+
+        }
+
+    var kmAtualInformada = parseFloat(prompt ("Qual a KM Atual / números do odômetro ?"))    
+
+        while (isNaN(kmAtualInformada)){
+            alert ("Você precisa informar corretamente qual a KM Atual / números do odômetro")
+
+            kmAtualInformada = parseFloat (prompt("Qual a KM Atual / números do odômetro ?"))    
+
+        }
+
+    var projecaoOdometro = CalculaKM (litrosInformado, mediaPorLitroInformada, kmAtualInformada);        
+
+
+    var projecao = litrosInformado * mediaPorLitroInformada
+
+
+    mostra ("Se em média com um 1 litro ele trafega  <strong> <big>"+ mediaPorLitroInformada +"</strong></big> Km." + "<br>Projeta-se que ele possa rodar mais "+projecao+ "Km ou até <strong> <big>"  +projecaoOdometro + "</strong></big> da Km informada no odômetro");
+
+    alert ("Com a quantidade abastecida projeta-se rodar "+projecao + " km" )
+
+</script>
+   
+</body>
+</html>
